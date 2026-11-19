@@ -1,0 +1,55 @@
+.footer {
+  padding: 36px 20px;
+  background: #1e293b;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.footer__inner {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.footer__name {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer__contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 24px;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__contact a:hover {
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid #334155;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* 좁은 화면: 연락처를 세로로 */
+@media (max-width: 480px) {
+  .footer {
+    padding: 28px 16px;
+  }
+
+  .footer__contact {
+    flex-direction: column;
+  }
+}
