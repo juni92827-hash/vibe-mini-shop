@@ -1,10 +1,15 @@
 .hero {
+  /* 넓은 화면 높이 450px. 글이 많아져도 잘리지 않도록 min-height 를 쓴다. */
+  min-height: 450px;
+  display: flex;
+  align-items: center;
   padding: 64px 20px;
   background: #eff6ff;
   text-align: center;
 }
 
 .hero__inner {
+  width: 100%;
   max-width: 720px;
   margin: 0 auto;
 }
@@ -42,6 +47,8 @@
 
 @media (max-width: 480px) {
   .hero {
+    /* 좁은 화면 높이: 화면 높이의 65% */
+    min-height: 65vh;
     padding: 44px 16px;
   }
 
